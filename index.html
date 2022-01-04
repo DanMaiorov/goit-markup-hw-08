@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header__container">
         <nav class="header__navigation">
           <a href="" class="header-logo link" lang="en">Web<span class="accent">Studio</span></a>
@@ -53,7 +53,7 @@
           </li>
         </ul>
       </div>
-    </header> -->
+    </header>
     <main>
       <section class="hero overlay">
         <div class="container">
@@ -148,7 +148,22 @@
           <h2 class="section-title">Наша команда</h2>
           <ul class="team-list list">
             <li class="team-list__item">
-              <img src="./images/worker1.jpg" alt="Игорь Демьяненко" width="270" />
+              <picture>
+                <source
+                  srcset="./images/worker1-dt-1x.jpg 1x, ./images/worker1-dt-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/worker1-tb-1x.jpg 1x, ./images/worker1-tb-2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/worker1-mb-1x.jpg 1x, ./images/worker1-mb-2x.jpg 2x"
+                  media="(min-width: 320px)"
+                />
+                <img src="./images/worker1-dt-1x.jpg" alt="Игорь Демьяненко" />
+              </picture>
+
               <div class="team-list__title">
                 <h3 class="team-list__name">Игорь Демьяненко</h3>
                 <p class="team-list__job" lang="en">Product Designer</p>
@@ -185,7 +200,22 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img src="./images/worker2.jpg" alt="Ольга Репина" width="270" />
+              <picture>
+                <source
+                  srcset="./images/worker2-dt-1x.jpg 1x, ./images/worker2-dt-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/worker2-tb-1x.jpg 1x, ./images/worker2-tb-2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/worker2-mb-1x.jpg 1x, ./images/worker2-mb-2x.jpg 2x"
+                  media="(min-width: 320px)"
+                />
+                <img src="./images/worker2-dt-1x.jpg" alt="Ольга Репина" />
+              </picture>
+
               <div class="team-list__title">
                 <h3 class="team-list__name">Ольга Репина</h3>
                 <p class="team-list__job" lang="en">Frontend Developer</p>
@@ -222,7 +252,22 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img src="./images/worker3.jpg" alt="Николай Тарасов" width="270" />
+              <picture>
+                <source
+                  srcset="./images/worker3-dt-1x.jpg 1x, ./images/worker3-dt-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/worker3-tb-1x.jpg 1x, ./images/worker3-tb-2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/worker3-mb-1x.jpg 1x, ./images/worker3-mb-2x.jpg 2x"
+                  media="(min-width: 320px)"
+                />
+                <img src="./images/worker3-dt-1x.jpg" alt="Николай Тарасов" />
+              </picture>
+
               <div class="team-list__title">
                 <h3 class="team-list__name">Николай Тарасов</h3>
                 <p class="team-list__job" lang="en">Marketing</p>
@@ -259,7 +304,22 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img src="./images/worker4.jpg" alt="Михаил Ермаков" width="270" />
+              <picture>
+                <source
+                  srcset="./images/worker4-dt-1x.jpg 1x, ./images/worker4-dt-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/worker4-tb-1x.jpg 1x, ./images/worker4-tb-2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/worker4-mb-1x.jpg 1x, ./images/worker4-mb-2x.jpg 2x"
+                  media="(min-width: 320px)"
+                />
+                <img src="./images/worker4-dt-1x.jpg" alt="Михаил Ермаков" />
+              </picture>
+
               <div class="team-list__title">
                 <h3 class="team-list__name">Михаил Ермаков</h3>
                 <p class="team-list__job" lang="en">UI Designer</p>
