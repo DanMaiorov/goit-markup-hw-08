@@ -1,7 +1,9 @@
 .examples-list {
+  @media screen and (min-width: 768px) {
   display: flex;
   flex-wrap: wrap;
   margin-right: -30px;
+  }
   margin-bottom: -30px;
   .title {
   color: var(--title-text-color);
@@ -15,14 +17,24 @@
 
 .examples-list__text {
   padding: 20px 24px;
+  height: 110px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  height: 146px;
+  }
   border: 1px solid var(--portfolio-cards-border-color);
 }
 
 .examples-list__item {
-  flex-basis: calc(100% / 3 - 30px);
-  width: 370px;
+  width: 450px;
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-right: 30px;
+  }  
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 3 - 30px);
+    width: 370px;
+  }
   background-color: var(--secondary-text-color);
-  margin-right: 30px;
   margin-bottom: 30px;  
 }
 

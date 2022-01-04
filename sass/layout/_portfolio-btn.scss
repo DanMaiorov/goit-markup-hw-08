@@ -8,12 +8,11 @@
 .portfolio-btn-filter {
   color: var(--title-text-color);
   background-color: var(--button-color);
-  border-color: var(--button-color);  
+  border-color: var(--button-color);
+  margin-bottom: 15px;
 }
 
 .portfolio-category {
-  padding-top: 94px;
-  padding-bottom: 94px;
   .portfolio-btn-current, .portfolio-btn-filter {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -26,8 +25,20 @@
 
 .portfolio-btn {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  @media screen and (min-width: 480px) {
+    flex-basis: 3;
+  }
+  @media screen and (min-width: 768px) {
+    padding-bottom: 14px;
+    justify-content: center;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 34px;
+  }
 }
 
 .portfolio-btn-item:not(:last-child) {
