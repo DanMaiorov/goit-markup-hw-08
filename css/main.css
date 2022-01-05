@@ -1205,9 +1205,15 @@ img {
 }
 
 .examples-list__item {
-  width: 450px;
+  width: auto;
   background-color: var(--secondary-text-color);
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 480px) {
+  .examples-list__item {
+    width: 450px;
+  }
 }
 
 @media screen and (min-width: 768px) {
