@@ -21,28 +21,60 @@
   @include font(14px, 1.71);
 }
 
-.footer-center,
-.footer-left__contacts,
+.footer-container {
+  width: 100%;
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+        width: 1170px;
+        text-align: left;
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+    }
+}
+
+
 .footer-center__socials,
 .footer-center__socials-link,
 .footer-left {
   display: flex;  
 }
 
-.footer > .container {
-  display: flex;
-  flex-direction: row;
-  align-items: baseline;
+.footer-wrap {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-around; 
+    }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+  }
 }
 
 .footer-left {
   flex-direction: column;
+  @media screen and (max-width: 1199px) {
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+  }
 }
+
 .footer-center {
-  flex-direction: column;  
-  width: 206px;
-  height: 80px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+    padding-bottom: 0;
+  }
+}
+
+.footer-right {
+  @media screen and (min-width: 1200px) {
   margin-left: auto;
+  }
 }
 
 .footer-center__title {
@@ -68,7 +100,7 @@
 .footer-center__socials-item {
   & + & {
   margin-left: 10px;
-}
+  }
 }
 
 .footer-center__socials-link {
@@ -92,13 +124,17 @@
 
 /* Форма футера Подпишись */
 
-.footer-right {
-  margin-left: auto;
-}
-
 .signup-form__mail {
-  width: 358px;
   height: 50px;
+  width: 320px;
+  margin-bottom: 20px;
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+    margin-bottom: 0;
+  }
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -109,15 +145,18 @@
 }
 
 .signup-form__wrap {
+  @media screen and (min-width: 1200px) {
   display: flex;
-  justify-content: space-between;  
+  justify-content: space-between;
+  } 
 }
 
 .signup-form__button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px 29px;
+    padding: 10px 29px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
 }
 
 .signup-form__button-icon {
