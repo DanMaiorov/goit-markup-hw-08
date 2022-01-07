@@ -9,13 +9,12 @@
 .work-list {
   display: flex;
   justify-content: space-between;
+  margin: -15px -15px;
 }
 
 .work-item {
   position: relative;
-  &:not(:last-child) {
-  margin-right: 30px;
-  }
+  margin: 15px 15px;
 }
 
 .work-item-text {

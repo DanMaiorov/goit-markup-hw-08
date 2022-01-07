@@ -59,10 +59,13 @@
   margin-top: 0;
   margin-bottom: 30px;
   color: var(--secondary-text-color);
-  @include font(26px, 1.62, 0.06em, 900);
   text-transform: uppercase;
+  @include font(20px, 1.62, 0.06em, 900);
+  @media screen and (min-width: 480px) {
+    @include font(26px, 1.62, 0.06em, 900);
+  }
   @media screen and (min-width: 1200px) {
-        @include font(44px, 1.36, 0.06em, 900);
+    @include font(44px, 1.36, 0.06em, 900);
   }
 }
 
