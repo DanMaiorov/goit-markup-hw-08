@@ -17,15 +17,13 @@
 .examples-list__text {
   padding: 20px 24px;
   border: 1px solid var(--portfolio-cards-border-color);
+  border-top: 0;
   flex-grow: 1;
 }
 
 .examples-list__item {
   width: auto;
   background-color: var(--secondary-text-color); 
-  &:not(:last-child) {
-    margin-bottom: 30px;
-  }
   @media screen and (min-width: 480px) {
     width: 450px;
   }
